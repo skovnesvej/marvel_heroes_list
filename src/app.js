@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-
 const heroRoutes = require('./routes/heroRoutes');
+
+const errorHandler = require('./middleware/errorHandler');
 
 const logger = require('./middleware/logger');
 const heroModel = require("./models/heroModel");
 
 
 app.use(express.json());
-
 app.use(logger);
 
 app.use('/heroes', heroRoutes);
@@ -25,10 +25,18 @@ app.get('/heroes', (req, res) => {
     res.status(200).json(allHeroes);
 });
 
-app.use((err, req, res, next) => {
-    console.error(err.stack);
-
-    res.status(500).json({message: 'Something broke!'});
+app.get('/sync-error', (req, res) => {
+    throw new Error('Synchronous error!');
 });
+
+app.get('/async-error', async (req, res, next) => {
+    try {
+        throw new Error('Async error!');
+    } catch (err) {
+        next(err);
+    }
+});
+
+app.use(errorHandler);
 
 module.exports = app;

@@ -39,3 +39,7 @@ exports.deleteHero = async (req, res) => {
         res.status(404).json({ message: 'No hero found' });
     }
 }
+
+exports.error = async (req, res) => {
+    res.status(500).json({ message: 'Something went wrong' });
+}

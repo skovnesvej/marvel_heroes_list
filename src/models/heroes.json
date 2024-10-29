@@ -1,20 +1,37 @@
 [
   {
-    "name": "Captain Slovakia",
-    "alias": "Steve Rogers",
-    "powers": [
-      "Super strength",
-      "Enhanced agility",
-      "Vibranium shield"
-    ],
-    "id": 2
-  },
-  {
     "name": "Captain Denmark",
     "alias": "Robert",
     "powers": [
-      "Cringe"
+      "Cringe",
+      "Military things",
+      "Unhealthy obsession with guns"
     ],
     "id": 3
+  },
+  {
+    "name": "Seizure Boy",
+    "alias": "Mikkel",
+    "powers": [
+      "Seizures"
+    ],
+    "id": 5
+  },
+  {
+    "name": "Normal Man",
+    "alias": "Oliver",
+    "powers": [
+      "Part of the normal race",
+      "Wants some finger"
+    ],
+    "id": 6
+  },
+  {
+    "name": "Shrek",
+    "alias": "Selline",
+    "powers": [
+      "Can convert any situation into a Shrek joke"
+    ],
+    "id": 7
   }
 ]
