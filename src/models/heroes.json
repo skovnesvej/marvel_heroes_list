@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Captain Slovakia",
+    "alias": "Steve Rogers",
+    "powers": [
+      "Super strength",
+      "Enhanced agility",
+      "Vibranium shield"
+    ],
+    "id": 2
+  },
+  {
+    "name": "Captain Denmark",
+    "alias": "Robert",
+    "powers": [
+      "Cringe"
+    ],
+    "id": 3
+  }
+]

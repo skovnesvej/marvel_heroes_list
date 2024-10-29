@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel Heroes</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Marvel Heroes api</h1>
+
+        <button class="btn"
+                onclick="showCreateForm()">Add new Hero</button>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Hero Name</th>
+                <th>Alias</th>
+                <th>Powers</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="heroesTable">
+            <tr>
+                <td>
+                    <button class="btn">Edit</button>
+                    <button class="btn delete">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div id="createForm" style="display: none;">
+            <h2>Add New Hero</h2>
+            <input type="text" id="heroName" placeholder="Hero Name">
+            <input type="text" id="heroAlias" placeholder="Alias">
+            <input type="text" id="heroPowers" placeholder="Powers (comma separated)">
+            <button class="btn" onclick="addHero()">Submit</button>
+        </div>
+    </div>
+<script src="index.js"></script>
+
+</body>
+</html>
